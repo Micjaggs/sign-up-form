@@ -1,0 +1,31 @@
+.banner-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.bground-image {
+    flex: 1;
+    background-image: url('Pictures/robert-tudor--8x6Ffud7Bk-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+form {
+    flex: 2;
+    padding: 2rem;
+    background-color: #fafafa;
+    display: flex;          /* make form a flex container */
+    flex-direction: column;   /* stack children vertically */
+    justify-content: center;  /* center vertically */
+    align-items: flex-start;  /* align items to the left */
+    height: 100%;  
+}
+
+.form-field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
