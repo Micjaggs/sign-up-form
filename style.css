@@ -1,3 +1,16 @@
+@font-face {
+    font-family: 'lemon_milkregular';
+    src: url('fonts/lemonmilk-regular-webfont.woff2') format('woff2'),
+         url('fonts/lemonmilk-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    outline: 2px solid red;
+}
+
 .banner-container {
     display: flex;
     width: 100vw;
@@ -13,7 +26,7 @@
 
 }
 
-form {
+form, .form-container {
     flex: 2;
     padding: 2rem;
     background-color: #fafafa;
@@ -28,4 +41,13 @@ form {
     display: flex;
     align-items: center;
     margin-bottom: 5px;
+}
+
+#banner-text {
+    position: absolute;
+    font-family: 'lemon_milkregular';
+    width: 40vw;
+    line-height: 1.5rem;
+    top: 5rem;
+    margin-left: 2rem;
 }
