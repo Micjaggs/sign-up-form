@@ -1,15 +1,15 @@
 @font-face {
-    font-family: 'lemon_milkregular';
-    src: url('fonts/lemonmilk-regular-webfont.woff2') format('woff2'),
-         url('fonts/lemonmilk-regular-webfont.woff') format('woff');
+    font-family: 'High Empathy';
+    src: url('fonts/HighEmpathy/HighEmpathy.woff2') format('woff2'),
+        url('fonts/HighEmpathy/HighEmpathy.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
+    font-display: swap;
 }
 
-* {
+/* * {
     outline: 2px solid red;
-}
+} */
 
 .banner-container {
     display: flex;
@@ -26,28 +26,46 @@
 
 }
 
-form, .form-container {
+form {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem 1rem;
+    width: 100%;
+}
+
+.form-container {
     flex: 2;
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 2rem;
-    background-color: #fafafa;
-    display: flex;          /* make form a flex container */
-    flex-direction: column;   /* stack children vertically */
-    justify-content: center;  /* center vertically */
-    align-items: flex-start;  /* align items to the left */
-    height: 100%;  
 }
 
 .form-field {
-    display: flex;
     align-items: center;
     margin-bottom: 5px;
+    width: 100%;
 }
 
 #banner-text {
-    position: absolute;
-    font-family: 'lemon_milkregular';
+    font-family: 'High Empathy';
+    font-size: 2rem;
     width: 40vw;
-    line-height: 1.5rem;
-    top: 5rem;
-    margin-left: 2rem;
+    line-height: 1.7rem;
+}
+
+#form-ribbon {
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+#quote-wrapper {
+    margin-top: -10rem; /* ← Lifts the quote upward visually */
+    margin-right: 20rem;
+    margin-bottom: 4rem; /* ← Adds space below quote */
 }
