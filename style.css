@@ -23,7 +23,34 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
 
+.logo {
+    position: relative;
+    top: 30%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* spacing between logo and text */
+    z-index: 10;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.605);
+}
+
+#odin-text {
+    color: #f3f3f3;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 2rem;
+    
+}
+
+.odin-logo {
+    width: 150px;
+    height: 150px;
+    background-image: url('Pictures/odin-lined.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 3.5rem;
 }
 
 form {
