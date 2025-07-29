@@ -11,6 +11,30 @@
     outline: 2px solid red;
 } */
 
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7rem;
+}
+
+input {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input:focus {
+    font-family: Arial, Helvetica, sans-serif;
+    border-color: blue;
+    box-shadow: 1px;
+}
+
+input:valid {
+    border-color: green;
+}
+
+input:invalid {
+    border-color: red;
+}
+
 #form-ribbon p {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -105,8 +129,30 @@ form {
 }
 
 #quote-wrapper {
-    margin-top: -10rem; /* ← Lifts the quote upward visually */
+    margin-top: -3rem; /* ← Lifts the quote upward visually */
     margin-right: 20rem;
-    margin-bottom: 4rem; /* ← Adds space below quote */
+    margin-bottom: 2rem; /* ← Adds space below quote */
+}
+
+.foot {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button[type="submit"] {
+    border-radius: 3px;
+    background-color: #596D48;
+    color: white;
+    border: none;
+    width: 10rem;
+    height: 2.5rem;
+}
+
+#log-in {
+    border-style: none;
+    background-color: none;
 }
 
