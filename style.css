@@ -62,19 +62,26 @@ input:invalid {
     gap: 0.5rem; /* spacing between logo and text */
     z-index: 10;
     width: 100%;
+    margin-right: auto;
     background-color: rgba(0, 0, 0, 0.605);
+}
+
+#text-box {
+    display: flex;
+    align-items: center;
+    width: 13vw;
+    height: 5vh;
 }
 
 #odin-text {
     color: #f3f3f3;
     font-family:Arial, Helvetica, sans-serif;
-    font-size: 2rem;
-    
+    font-size: clamp(1rem, 3vw, 5rem)
 }
 
 .odin-logo {
-    width: 150px;
-    height: 150px;
+    width: 13vw;
+    height: 25vh;
     background-image: url('Pictures/odin-lined.png');
     background-position: center;
     background-size: contain;
