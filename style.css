@@ -31,8 +31,8 @@ input:valid {
     border-color: green;
 }
 
-input:invalid {
-    border-color: red;
+input[type="password"]:invalid {
+    border: 2px solid red;
 }
 
 #form-ribbon p {
@@ -160,6 +160,14 @@ button[type="submit"] {
 
 #log-in {
     border-style: none;
-    background-color: none;
+    background-color: inherit;
+}
+
+#log-in:hover {
+    background-color: inherit;
+    box-shadow: none;
+    color: blue;
+    text-decoration: underline;
+
 }
 
